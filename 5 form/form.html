@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form{
+            position: relative;
+            top: 50px;
+            border: 1px solid black;
+            background-color: rgb(166, 155, 155);
+            color: white;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input{
+            margin: 10px;
+        }
+        label{
+            margin: 10px;
+        }
+        .head{
+            text-align: center;
+            color: rgb(237, 215, 215);
+        }
+        span{
+            margin: 10px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: -30px;
+        }
+        #img{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <img id="img"src="./img.png" alt="log">
+        <h1 class="head">Registeration</h1>
+        <label  for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <br>
+        <span>Gender</span><br/>
+        <label for="radio">Male</label>
+        <input type="radio" name="gender">
+        <label for="">Female</label>
+        <input type="radio" name="gender" id="gender">
+        <label for="">other</label>
+        <input type="radio" name="gender">
+        <br>
+        <label for="name">Faher Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Father name">
+        <br>
+        <label for="name"> Mother Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Mother name">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

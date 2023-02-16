@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="smapl.css">
+</head>
+<body>
+    <form   onsubmit="return validate()" >
+        <p id="error"></p>
+        <h1>Registratiom</h1>
+        <label>Name</label> <input type="text" placeholder="Enter Name" id="fname" /><br>
+        <label>email</label> <input type="email" placeholder="Enter email" id="email" /><br>
+        <label>password</label> <input type="password" placeholder="Enter password" id="psw" /><br>
+        <label>phone</label> <input type="number" placeholder="Enter phone" id="ph" /><br>
+        
+        <div id="submit">
+            <input type="submit" value="submit"/>
+        </div>
+    </form>
+    <script>
+        function validate(){
+            var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var psw = document.getElementById("psw").value;
+            var ph = document.getElementById("ph").value;
+            var error = document.getElementById("error");
+            var text;
+            error.style.padding = "10px";
+            if(fname.length = ""){
+                error = "Please Enter valid name";
+                error.innerHTML = text;
+                return false;
+            }
+            if(email.indexOf("@") == -1 || email.length < 6){
+                text = "Please Enter valid email";
+                error.innerHTML = text;
+                return false;
+            }
+            if(psw == ""){
+                text = "Please Enter valid password";
+                error.innerHTML = text;
+                return false;
+            }
+            if(ph == 0){
+                text = "Please Enter valid phone";
+                error.innerHTML = text;
+                return false;
+            }
+            alert("Form Submitted Successfully!");
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Math.trunc()</title>
+</head>
+<body id = "body">
+
+    <h2 onclick="isKeyPressed(event)">Click JavaScript Math.trunc()</h2>
+
+    <p>Math.trunc(x) returns the integer part of x:</p>
+
+    <p id="demo"></p>
+
+    <p onClick = "clickMe()">Click</p>
+    <p id="click"></p>
+
+    <p onClick = "copy()">Copy</p>
+    <input type="text" id = "copy" value="Hello, world!">
+    <input type="text" id = "paste" value="">
+
+    <p onclick="day()">Click to get date</p>
+    <p id="da"></p>
+
+    <script>
+        function isKeyPressed(event) {
+            var m = document.getElementById("demo").innerHTML = Math.trunc(4.1);
+            document.getElementById("body").style.color = "red";
+        }
+        function clickMe(){
+            document.getElementById("click").innerHTML = "You clicked me";
+        }
+        function copy(){
+              document.getElementById("paste").value = document.getElementById("copy").value;
+           
+        }
+        function day(){
+            var d = new Date();
+            document.getElementById("da").innerHTML = d;
+        }
+    </script>
+
+</body>
+
+</html>

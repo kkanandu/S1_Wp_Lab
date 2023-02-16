@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Predefined functions in string and math</title>
+<style>
+    body    
+    {
+        text-align: center;
+        font-family: verdana;
+        font-size: 25px;
+    }
+</style>
+</head>
+<body>
+    <script>
+        document.write("<h2>Predefined functions of string and math object</h2>")
+        var num=Math.round(4.4)
+        document.write("Rounding a number using Math.round",+num);
+        var str="Hello World";
+        document.write("<br>")
+        document.write("Charecter at 0th position of "+str+" is:"+str.charAt(0));
+        var c=50.65
+        var x=Math.ceil(c)
+        document.write("<br>Value of "+c+" after using Math.ceil is:"+x);
+        var lw="web programming";
+        document.write("<br>"+lw+" to upper case:"+lw.toUpperCase());
+        var power=Math.pow(3,2);
+        document.write("<br> Math.pow(3,2) gives:"+power);
+    </script>
+</body>
+</html>

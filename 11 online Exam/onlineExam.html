@@ -1,0 +1,77 @@
+<!-- Online page using html and javascript -->
+<html>
+<head>
+<title>Online Exam</title>
+<style>
+    body
+    {
+        text-align: center;
+        font-family: verdana;
+        font-size: 25px;
+    }
+
+</style>
+</head>
+<body>
+    <h2>Online Exam</h2>
+    <h3>use small letters only</h3>
+    <form onsubmit="return submited()">
+        <label for="">What is Full form of MCA</label>
+        <input type="text" name="mca" id="mca">
+        <br>
+        <label for="">What is Full form of M.Tech</label>
+        <input type="text" name="mtech" id="mtech">
+        <br>
+        <label for="">What is Full form of B.Tech</label>
+        <input type="text" name="btech" id="btech">
+        <br>
+        <label for="">What is Full form of BCA</label>
+        <input type="text" name="bca" id="bca">
+        <br>
+        <label for="">What is Full form of BBA</label>
+        <input type="text" name="bba" id="bba">
+        <br>    
+        <input type="submit" value="submit">
+    </form>
+<script>
+   
+    function submited(){
+         var marks = 0;
+        var mca = document.getElementById("mca").value;
+        var mtech = document.getElementById("mtech").value;
+        var btech = document.getElementById("btech").value;
+        var bca = document.getElementById("bca").value;
+        var bba = document.getElementById("bba").value;
+        if(mca == "master of computer application"){
+            marks = marks + 1;
+        }else{
+            marks = marks + 0;
+        }
+        if(mtech == "master of technology"){
+            
+             marks = marks + 1;
+        }else{
+             marks = marks + 0;
+        }
+        if(btech == "bachelor of technology"){
+             marks = marks + 1;
+        }else{
+             marks = marks + 0;
+        }
+        if(bca == "bachelor of computer application"){
+            marks = marks + 1;
+        }else{
+             marks = marks + 0;
+        }
+        if(bba == "bachelor of business administration"){
+            marks = marks + 1;
+        }else{
+             marks = marks + 0;
+        }
+        alert("your marks is "+marks);
+        return true;
+    }
+    
+</script>
+</body>
+</html>
